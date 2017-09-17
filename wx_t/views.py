@@ -7,7 +7,7 @@ from . import receive
 
 def handle(request):
     print(request.body)
-    token='anhedonia'
+    
     if request.methd=='GET':
         return GET(request)
     else:
@@ -16,6 +16,7 @@ def handle(request):
 
 def GET(request):
     try:
+        token='anhedonia'
         data=request.GET
         if len(data)==0:
             return 'No data'
