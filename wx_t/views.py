@@ -18,6 +18,7 @@ def GET(request):
     try:
         token='anhedonia'
         data=request.GET
+        print(data)
         if len(data)==0:
             return 'No data'
         signature=data.siganture
