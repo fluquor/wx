@@ -39,5 +39,5 @@ def GET(request):
         pass
 
 def POST(request):
-    pass
+    return HttpResponse("")
             
