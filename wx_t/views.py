@@ -12,9 +12,10 @@ def handle(request):
         data=request.GET
         if len(data)==0:
             return 'No data'
-        siganture=data.siganture
+        signature=data.siganture
         nonce = data.nonce
         echostr = data.echostr
+        timestamp = data.timestamp
         ist = [token, timestamp, nonce]
         list.sort()
         sha1 = hashlib.sha1()
