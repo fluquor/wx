@@ -32,9 +32,9 @@ def GET(request):
         hashcode = sha1.hexdigest()
         print("handle/GET func: hashcode, signature: ", hashcode, signature)
         if hashcode == signature:
-            return echostr
+            return HttpResponse(echostr)
         else:
-            return "Bad"
+            return HttpResponse("")
     except (Exception):
         pass
 
