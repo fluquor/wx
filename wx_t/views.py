@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 import hashlib
+import receive
+import reply
 # Create your views here.
 
 def handle(request):
