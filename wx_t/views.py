@@ -21,10 +21,10 @@ def GET(request):
         print(data)
         if len(data)==0:
             return 'No data'
-        signature=data.siganture
-        nonce = data.nonce
-        echostr = data.echostr
-        timestamp = data.timestamp
+        signature=data.get('signature')
+        nonce = data..get('nonce')
+        echostr = data.get('echostr')
+        timestamp = data.get('timestamp')
         ist = [token, timestamp, nonce]
         list.sort()
         sha1 = hashlib.sha1()
