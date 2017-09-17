@@ -22,7 +22,7 @@ def handle(request):
         if hashcode == signature:
             return echostr
         else:
-            return "Good"
+            return "Bad"
     except Exception,Argument:
         return Argument
             
