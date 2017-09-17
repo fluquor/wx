@@ -25,6 +25,6 @@ def handle(request):
             return echostr
         else:
             return "Bad"
-    except Exception,Argument:
-        return Argument
+    except (Exception):
+        pass
             
