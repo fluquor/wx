@@ -8,7 +8,7 @@ from . import receive
 def handle(request):
     print(request.body)
     
-    if request.methd=='GET':
+    if request.method=='GET':
         return GET(request)
     else:
         return POST(request)
