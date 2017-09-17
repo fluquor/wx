@@ -8,6 +8,13 @@ from . import receive
 def handle(request):
     print(request.body)
     token='anhedonia'
+    if request.methd=='GET':
+        return GET(request)
+    else:
+        return POST(request)
+    
+
+def GET(request):
     try:
         data=request.GET
         if len(data)==0:
@@ -28,4 +35,7 @@ def handle(request):
             return "Bad"
     except (Exception):
         pass
+
+def POST(request):
+    pass
             
