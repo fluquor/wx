@@ -22,7 +22,7 @@ def GET(request):
         if len(data)==0:
             return 'No data'
         signature=data.get('signature')
-        nonce = data..get('nonce')
+        nonce = data.get('nonce')
         echostr = data.get('echostr')
         timestamp = data.get('timestamp')
         ist = [token, timestamp, nonce]
