@@ -25,7 +25,7 @@ SECRET_KEY = 'r$2+te)2d!^w##6(@tblu1tpg$g5d=%z6f4wln-^=c@tn8zpp%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0','localhost','127.0.0.1','119.29.11.150']
+ALLOWED_HOSTS = ['0.0.0.0','localhost','127.0.0.1','119.29.11.150','114.214.178.136']
 
 
 # Application definition
@@ -43,10 +43,10 @@ MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
 ROOT_URLCONF = 'wx.urls'
